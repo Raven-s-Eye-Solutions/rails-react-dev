@@ -8,7 +8,7 @@ export const App = () => {
 
   useEffect(() => {
     async function fetchTime() {
-      const response = await fetch('/current-time');
+      const response = await fetch('/time');
       if (response.ok) {
         const data = await response.json();
         if (data.time) {
