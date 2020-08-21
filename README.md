@@ -1,24 +1,23 @@
-# README
+# rails-react-dev
+A starting point boilerplate full stack project built with Ruby, Rails, and webpacker with React.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting started
 
-Things you may want to cover:
+This project requires the following:
+* Python3.7
+* pipenv
+* Node 12.12
+* Yarn 1.19
 
-* Ruby version
+1. Clone the repo
+2. Run `yarn install`
+3. Add a `.flaskenv` file with the following:
 
-* System dependencies
+```
+FLASK_ENV=development
+FLASK_APP=./server/src/main.py
+```
 
-* Configuration
+4. Run `yarn dev:start` ! 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Happy trails!
