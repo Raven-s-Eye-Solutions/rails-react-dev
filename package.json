@@ -13,8 +13,14 @@
     "react-dom": "^16.13.1",
     "turbolinks": "^5.2.0"
   },
+  "scripts": {
+    "dev:start:server": "rails s",
+    "dev:start:client": "./bin/webpack-dev-server",
+    "dev:start": "concurrently \"yarn run dev:start:server\" \"yarn run dev:start:client\""
+  },
   "version": "0.1.0",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
