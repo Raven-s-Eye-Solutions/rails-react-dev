@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get "time/getCurrentTime"
   root "pages#index"
+  get "current-time", to: "time#getCurrentTime"
 end

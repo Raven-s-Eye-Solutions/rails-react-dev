@@ -1,6 +1,7 @@
 class TimeController < ApplicationController
   def getCurrentTime
-    response = { 'time': Time.new() }
-    json_response(response)
+    # Time in seconds since epoch
+    response = { 'time': Time.now.to_i }
+    render json: response
   end
 end
