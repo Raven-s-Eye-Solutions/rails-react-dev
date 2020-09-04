@@ -11,12 +11,10 @@ export const App = () => {
       const response = await fetch('/current-time');
       if (response.ok) {
         const data = await response.json();
-        if (data.time) {
-          const date = new Date();
-          date.setTime(data.time * 1000);
-          date.toUTCString();
-          setTime(date);
-        }
+        const date = new Date();
+        date.setTime(data.time * 1000);
+        date.toUTCString();
+        setTime(date);
       } else {
         setError(response.statusText);
       }
