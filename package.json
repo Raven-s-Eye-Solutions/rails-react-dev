@@ -1,5 +1,6 @@
 {
   "name": "rails_react_dev",
+  "description": "A starting point boilerplate full stack project built with Ruby, Rails, and webpacker with React.",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.10.4",
